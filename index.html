@@ -39,6 +39,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Rectangle -->
                 <div class="card bg-base-100 w-96 shadow-sm">
                     <figure class="px-10 pt-10">
                         <img
@@ -63,6 +64,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Parallelogram -->
                 <div class="card bg-base-100 w-96 shadow-sm">
                     <figure class="px-10 pt-10">
                         <img
@@ -72,12 +74,22 @@
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Parallelogram</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <p class="text-xl pt-3">Area (A) = b X h</p>
+                        <div>
+                            <p class="text-xl">Area : <span id="parallelogram-area"></span> <span></span>cm<sup>2</sup></p>
+                        </div>
+                        <div>
+                            <input id="parallelogramBaseInput" class="w-24 text-xl p-2 rounded-sm" type="text" placeholder="b">
+                            <span class="mr-4 ml-2 text-xl">cm</span>
+                            <input id="parallelogramHeightInput" class="w-24 text-xl p-2 rounded-sm" type="text" placeholder="h">
+                            <span class="mr-4 ml-2 text-xl">cm</span>
+                        </div>
                         <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="parallelogramAreaCalulation()" class="btn btn-primary">Calculate</button>
                         </div>
                     </div>
                 </div>
+                <!-- Rhombus -->
                 <div class="card bg-base-100 w-96 shadow-sm">
                     <figure class="px-10 pt-10">
                         <img
@@ -87,12 +99,22 @@
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Rhombus</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <p class="text-xl">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                        <div>
+                            <p class="text-xl">Area : <span id="rhombus-area"></span> <span></span>cm<sup>2</sup></p>
+                        </div>
+                        <div>
+                            <input id="rhombusBaseInput" class="w-24 text-xl p-2 rounded-sm" type="text" placeholder="d1">
+                            <span class="mr-4 ml-2 text-xl">cm</span>
+                            <input id="rhombusHeightInput" class="w-24 text-xl p-2 rounded-sm" type="text" placeholder="d2">
+                            <span class="mr-4 ml-2 text-xl">cm</span>
+                        </div>
                         <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="rhombusAreaCalculation()" class="btn btn-primary">Calulate</button>
                         </div>
                     </div>
                 </div>
+                <!-- Pentagon -->
                 <div class="card bg-base-100 w-96 shadow-sm">
                     <figure class="px-10 pt-10">
                         <img
@@ -102,12 +124,22 @@
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Pentagon</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <p class="text-xl">Area (A) = 0.5 X p X b</p>
+                        <div>
+                            <p class="text-xl">Area : <span id="pentagon-area"></span> <span></span>cm<sup>2</sup></p>
+                        </div>
+                        <div>
+                            <input id="pentagonPerimeterInput" class="w-24 text-xl p-2 rounded-sm" type="text" placeholder="p">
+                            <span class="mr-4 ml-2 text-xl">cm</span>
+                            <input id="pentagonBaseInput" class="w-24 text-xl p-2 rounded-sm" type="text" placeholder="b">
+                            <span class="mr-4 ml-2 text-xl">cm</span>
+                        </div>
                         <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="pentagonAreaCalculation()" class="btn btn-primary">Calulate</button>
                         </div>
                     </div>
                 </div>
+                <!-- Ellipse -->
                 <div class="card bg-base-100 w-96 shadow-sm">
                     <figure class="px-10 pt-10">
                         <img
@@ -117,9 +149,18 @@
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Ellipse</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <p class="text-xl">Area (A) = πab</p>
+                        <div>
+                            <p class="text-xl">Area : <span id="ellipse-area"></span> <span></span>cm<sup>2</sup></p>
+                        </div>
+                        <div>
+                            <input id="ellipse-aAxisInput" class="w-24 text-xl p-2 rounded-sm" type="text" placeholder="a">
+                            <span class="mr-4 ml-2 text-xl">cm</span>
+                            <input id="ellipse-bAxisInput" class="w-24 text-xl p-2 rounded-sm" type="text" placeholder="b">
+                            <span class="mr-4 ml-2 text-xl">cm</span>
+                        </div>
                         <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="ellipseAreaCalculation()" class="btn btn-primary">Calulate</button>
                         </div>
                     </div>
                 </div>
@@ -131,5 +172,9 @@
     </main>
     <script src="scripts/triangle.js"></script>
     <script src="scripts/rectangle.js"></script>
+    <script src="scripts/parallelogram.js"></script>
+    <script src="scripts/ellipse.js"></script>
+    <script src="scripts/pentagon.js"></script>
+    <script src="scripts/rhombus.js"></script>
 </body>
 </html>
