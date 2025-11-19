@@ -48,9 +48,18 @@
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Rectangle</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <p class="text-xl">Area (A) = w X l</p>
+                        <div>
+                            <p class="text-xl">Area : <span id="rectangle-Area"></span> <span></span>cm<sup>2</sup></p>
+                        </div>
+                        <div>
+                            <input id="rectangleWidthInput" class="w-24 text-xl p-2 rounded-sm" type="text" placeholder="w">
+                            <span class="mr-4 ml-2 text-xl">cm</span>
+                            <input id="rectangleLengthInput" class="w-24 text-xl p-2 rounded-sm" type="text" placeholder="l">
+                            <span class="mr-4 ml-2 text-xl">cm</span>
+                        </div>
                         <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="calculateRectangleArea()" class="btn btn-primary">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -121,5 +130,6 @@
         </div>
     </main>
     <script src="scripts/triangle.js"></script>
+    <script src="scripts/rectangle.js"></script>
 </body>
 </html>
